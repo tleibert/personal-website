@@ -37,11 +37,24 @@
                         <h1><a href="https://gitlab.com/trevdev1/papermc-manager">PaperMC Manager</a></h1>
                     </header>
 
-                    <span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+                    <span class="image main"><img src="images/papermc_manager_cli.png" alt="" /></span>
 
-                    <p>PaperMC Manager is a CLI tool for the easy administration of Minecraft servers running the
-                        PaperMC custom server jar. The tool provices the ability to easily update the existing
-                        installation, or to fetch the needed files to begin a new installation.</p>
+                    <p><a href="https://gitlab.com/trevdev1/papermc-manager">PaperMC Manager</a> is a CLI tool for the
+                        easy administration of Minecraft servers running the
+                        <a href=https://papermc.io />PaperMC</a> custom server jar. The tool provices the ability to
+                        easily update the existing
+                        installation, or to fetch the needed files to begin a new installation.
+                    </p>
+                    <p>The program is built in Python 3.8, leveraging <a
+                            href=https://www.pyinstaller.org />Pyinstaller</a> to build and distribute an
+                        "all-in-one" executable. It uses <a href=https://click.palletsprojects.com/en/8.0.x />Click</a>
+                        for the top-level CLI code, with <a
+                            href=https://docs.python-requests.org/en/latest />Requests</a> handling communication with
+                        the PaperMC api servers for downloading the server files.
+                        The program's code is tested and quality-checked using GitlabCI on my personal CI runners
+                        running in the Oracle Cloud. The runners also build the Pyinstaller executable and publish it as
+                        an artifact on the project page.
+                    </p>
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class
                         aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam
                         tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc
